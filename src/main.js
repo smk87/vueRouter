@@ -8,7 +8,8 @@ Vue.use(VueRouter);
 
 // Add the routes
 const router = new VueRouter({
-  routes
+  routes,
+  mode: "history"
 });
 
 new Vue({
