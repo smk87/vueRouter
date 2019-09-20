@@ -5,6 +5,8 @@
     <p>Loaded ID: {{ id }} (watch)</p>
     <p>Loaded ID: {{ uid }} (computed)</p>
     <button @click="navigateToHome" class="btn btn-primary">Go to Home</button>
+    <hr>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -12,7 +14,7 @@
 export default {
   methods: {
     navigateToHome() {
-      this.$router.push("/"); // Similiar to React's history.push()
+      this.$router.push({name:"home"}); // Similiar to React's history.push()
     }
   }
 };

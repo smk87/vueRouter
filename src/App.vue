@@ -5,7 +5,9 @@
         <h1>Routing</h1>
         <hr />
         <Header />
+        <router-view name="header-top"></router-view>
         <router-view></router-view>
+        <router-view name="header-bottom"></router-view>
       </div>
     </div>
   </div>
